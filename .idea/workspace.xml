@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b1d4dce-1c47-4d3c-b67d-0097180b1e90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/analytics.py" beforeDir="false" afterPath="$PROJECT_DIR$/analytics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyticsdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyticsdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsdata.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,14 +44,16 @@
         <counts>
           <entry key="html" value="242" />
           <entry key="md" value="642" />
-          <entry key="py" value="986" />
+          <entry key="py" value="993" />
+          <entry key="txt" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="242" />
           <entry key="Markdown" value="642" />
-          <entry key="Python" value="986" />
+          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="Python" value="993" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -62,24 +62,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/analytics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="650">
+              <caret line="284" column="19" selection-start-line="284" selection-start-column="19" selection-end-line="284" selection-end-column="19" />
               <folding>
                 <element signature="e#28#82#0" expanded="true" />
-                <marker date="1537899122599" expanded="true" signature="10525:10528" ph="..." />
+                <marker date="1537899804309" expanded="true" signature="10642:10645" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analyticsdb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="-51">
+              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding>
                 <marker date="1537899157508" expanded="true" signature="1062:1067" ph="..." />
               </folding>
@@ -137,9 +137,9 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/includes/errors.html" />
         <option value="$PROJECT_DIR$/solution/forum.py" />
-        <option value="$PROJECT_DIR$/analytics.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/analyticsdb.py" />
+        <option value="$PROJECT_DIR$/analytics.py" />
       </list>
     </option>
   </component>
@@ -263,6 +263,14 @@
       <option name="presentableId" value="Default" />
       <updated>1537815993657</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1537899196237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537899196237</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -325,6 +333,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/forum.sql" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/flask/app.py">
@@ -362,23 +374,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analytics.py">
+    <entry file="file://$PROJECT_DIR$/analyticsdb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="-51">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding>
-            <element signature="e#28#82#0" expanded="true" />
-            <marker date="1537899122599" expanded="true" signature="10525:10528" ph="..." />
+            <marker date="1537899157508" expanded="true" signature="1062:1067" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analyticsdb.py">
+    <entry file="file://$PROJECT_DIR$/analytics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state relative-caret-position="650">
+          <caret line="284" column="19" selection-start-line="284" selection-start-column="19" selection-end-line="284" selection-end-column="19" />
           <folding>
-            <marker date="1537899157508" expanded="true" signature="1062:1067" ph="..." />
+            <element signature="e#28#82#0" expanded="true" />
+            <marker date="1537899804309" expanded="true" signature="10642:10645" ph="..." />
           </folding>
         </state>
       </provider>
