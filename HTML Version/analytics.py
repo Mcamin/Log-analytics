@@ -5,6 +5,7 @@ from flask import Flask, Response, stream_with_context
 
 from analyticsdb import *
 
+
 app = Flask(__name__)
 
 errorRate = '''\
@@ -86,9 +87,9 @@ HTML_WRAP = '''\
     <header class="topbar" data-navbarbg="skin5">
       <nav class="navbar top-navbar navbar-expand-md navbar-dark">
         <div class="navbar-header" data-logobg="skin5">
-          <!-- ============================================================= -->
-          <!-- Logo -->
-          <!-- ============================================================= -->
+    <!-- ============================================================= -->
+    <!-- Logo -->
+    <!-- ============================================================= -->
           <a class="navbar-brand" href=".">
             <!-- Logo icon -->
             <b class="logo-icon p-l-10">
@@ -105,16 +106,16 @@ HTML_WRAP = '''\
 
                       </span>
           </a>
-          <!-- ============================================================= -->
-          <!-- End Logo -->
-          <!-- ============================================================= -->
+    <!-- ============================================================= -->
+    <!-- End Logo -->
+    <!-- ============================================================= -->
         </div>
 
         <div class="navbar-collapse collapse" id="navbarSupportedContent"
              data-navbarbg="skin5">
-          <!-- ============================================================= -->
-          <!-- toggle and nav items -->
-          <!-- ============================================================= -->
+    <!-- ============================================================= -->
+    <!-- toggle and nav items -->
+    <!-- ============================================================= -->
           <ul class="navbar-nav float-left mr-auto">
             <li class="nav-item d-none d-md-block">
               <a class="nav-link sidebartoggler waves-effect waves-light"
@@ -143,13 +144,13 @@ HTML_WRAP = '''\
       <!-- End Sidebar scroll-->
     </aside>
 
-    <!-- ============================================================== -->
+    <!-- ====================================================== -->
     <!-- Page wrapper  -->
-    <!-- ============================================================== -->
+    <!-- ====================================================== -->
     <div class="page-wrapper">
-      <!-- ============================================================== -->
+      <!-- ==================================================== -->
       <!-- Bread crumb and right sidebar toggle -->
-      <!-- ============================================================== -->
+      <!-- ==================================================== -->
       <div class="page-breadcrumb">
         <div class="row">
           <div class="col-12 d-flex no-block align-items-center">
@@ -168,9 +169,9 @@ HTML_WRAP = '''\
         </div>
       </div>
       <div class="container-fluid">
-        <!-- ============================================================== -->
+        <!-- ===================================================== -->
         <!-- Start Page Content -->
-        <!-- ============================================================== -->
+        <!-- ===================================================== -->
         <div class="row">
           <!-- Column -->
           <div class="col-lg-12">
@@ -231,7 +232,8 @@ HTML_WRAP = '''\
   <script src="static/assets/libs/popper.js/dist/umd/popper.min.js"></script>
   <script src="static/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- slimscrollbar scrollbar JavaScript -->
-  <script src="static/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js">
+  <script src="static/assets/libs/perfect-scrollbar/dist/perfect-scrollbar
+  .jquery.min.js">
   </script>
   <!--Wave Effects -->
   <script src="static/dist/js/waves.js"></script>
@@ -261,10 +263,10 @@ def main():
     c = db.cursor()
     Rates = "".join(errorRate % (rate, date.strftime('%d, %b %Y'), rate)
                     for rate, date in get_requests_errors(c))
-    Authors = "".join(popularAuthors % (author, views)
-                    for author, views in get_popular_authors(c))
-    Articles = "".join(popularArticles % (title, visits)
-                    for title, visits in get_popular_articles(c))
+    Authors = "".join(popularAuthors % (author, views)for author, views
+                      in get_popular_authors(c))
+    Articles = "".join(popularArticles % (title, visits)for title, visits
+                       in get_popular_articles(c))
     html = HTML_WRAP % (Authors, Articles, Rates)
     close_db(db)
     return html
