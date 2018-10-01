@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # "Database code" for the DB Forum.
 
 import psycopg2

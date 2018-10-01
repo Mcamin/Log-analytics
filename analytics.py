@@ -288,7 +288,7 @@ def getTextFile():
     return Response(
         stream_with_context(t.encode(encoding='UTF-8', errors='strict')),
         mimetype="text/plain",
-        headers={"Content-disposition": "attachment; filename=Logs.txt"})
+        headers={"Content-disposition": "attachment; filename=Results.txt"})
 
 
 if __name__ == '__main__':
