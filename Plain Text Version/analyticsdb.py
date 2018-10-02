@@ -23,8 +23,8 @@ def get_popular_authors(c):
 def get_requests_errors(c):
     # Get the date and  error rates which are  higher than 1%:
     c.execute("select rate,date "
-              "from("
-              "select cast((badrequests.badreq*100)/reqperday.numreq as"
+              "from( "
+              "select cast((badrequests.badreq*100)/reqperday.numreq as "
               "decimal(10,2))"
               " as rate,reqperday.date "
               "from badrequests,reqperday "
