@@ -33,7 +33,8 @@
 
 * ###### The Html  Version folder contains the scripts that output an HTML Page containing the results and a download button that generate the output as a text file when clicked. just run the analytics.py and open <a target="_blank" href="http://localhost:8000/">localhost</a>. Once clicked on the download button, the output will be created in the same directory.
 
-######The command to run the programm is the following: python analytics.py
+######The command to run the programm is the following:  
+     python analytics.py
 ##### Table Representation
 
 <br/>
