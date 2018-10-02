@@ -1,12 +1,12 @@
 # Udacity Log Analytics Project
 
-#### Requirements:
+#### Instructions:
 
 ##### 1. install  <a target="_blank" href="https://www.python.org/">Python</a>
 
 ##### 2. install  <a target="_blank" href="https://www.postgresql.org/">PostgreSQL</a>
 
-##### 3. unzip and load the data from <a target="_blank" href="https://www.postgresql.org/">newsdata.sql</a> in the database using the  following command:
+##### 3. unzip and load the data from <a target="_blank" href="https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip">newsdata.sql</a> in the database using the  following command:
 
     psql -d news -f newsdata.sql
 
@@ -35,6 +35,7 @@
 
 ######The command to run the programm is the following:  
      python analytics.py
+
 ##### Table Representation
 
 <br/>
